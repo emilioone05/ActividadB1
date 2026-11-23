@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Actividad B1</string>
+    <string name="titulo_main">Desarrollo de Plataformas Móviles</string>
+    <string name="descripcion_main">Proyecto móvil en Android Studio con Kotlin: muestra texto, una imagen y un botón que conduce a otra ventana.</string>
+    <string name="desc_imagen">Imagen de ejemplo</string>
+    <string name="btn_siguiente">Ir a la segunda ventana</string>
+    <string name="titulo_second">Segunda ventana</string>
+    <string name="descripcion_second">¡Navegación exitosa mediante un Intent! Esta es la segunda Activity del proyecto.</string>
+    <string name="btn_regresar">Regresar</string>
+</resources>

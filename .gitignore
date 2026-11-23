@@ -1,0 +1,19 @@
+﻿# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Archivos locales (rutas del SDK de cada equipo)
+local.properties
+
+# Android Studio / IntelliJ
+.idea/
+*.iml
+
+# APK compilados (el APK de entrega se fuerza con git add -f)
+*.apk
+*.aab
+
+# Sistema
+.DS_Store
+Thumbs.db
