@@ -1,6 +1,7 @@
 # ActividadB1 — Desarrollo de Plataformas Móviles (UTPL)
 
-Aplicación Android nativa (Kotlin + XML) que muestra **texto, una imagen y un botón**
+Mockup de **ArtRider** (marketplace de alquiler de equipos para eventos) como app Android nativa
+(Kotlin + XML) que muestra **texto, una imagen y un botón**
 que conduce a **otra ventana** (Activity).
 
 Autor: Emilio Peña

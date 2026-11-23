@@ -1,10 +1,28 @@
 <resources>
-    <string name="app_name">Actividad B1</string>
-    <string name="titulo_main">Desarrollo de Plataformas Móviles</string>
-    <string name="descripcion_main">Proyecto móvil en Android Studio con Kotlin: muestra texto, una imagen y un botón que conduce a otra ventana.</string>
-    <string name="desc_imagen">Imagen de ejemplo</string>
-    <string name="btn_siguiente">Ir a la segunda ventana</string>
-    <string name="titulo_second">Segunda ventana</string>
-    <string name="descripcion_second">¡Navegación exitosa mediante un Intent! Esta es la segunda Activity del proyecto.</string>
-    <string name="btn_regresar">Regresar</string>
+    <string name="app_name">ArtRider</string>
+
+    <!-- Pantalla 1: catálogo -->
+    <string name="titulo_main">ArtRider</string>
+    <string name="descripcion_main">Alquila equipos de audio, iluminación y video para tu evento, de persona a persona.</string>
+    <string name="seccion_destacado">Equipo destacado en Loja</string>
+    <string name="equipo_nombre">Parlante activo 15 pulgadas + trípode</string>
+    <string name="equipo_categoria">Audio · Loja · Incluye montaje y retiro</string>
+    <string name="equipo_precio">$96.99 / día</string>
+    <string name="desc_imagen">Ilustración de un parlante activo con luces</string>
+    <string name="btn_siguiente">Ver detalle del equipo</string>
+
+    <!-- Pantalla 2: detalle -->
+    <string name="titulo_second">Detalle del equipo</string>
+    <string name="descripcion_second">Parlante potente para eventos de hasta 150 personas. El Partner lo instala, lo monitorea durante el evento y lo retira esa misma noche.</string>
+    <string name="desglose_titulo">Resumen del alquiler</string>
+    <string name="desglose_base">Precio del equipo (con comisión ArtRider)</string>
+    <string name="desglose_base_valor">$92.00</string>
+    <string name="desglose_servicio">Tarifa de servicio (5%)</string>
+    <string name="desglose_servicio_valor">$4.60</string>
+    <string name="desglose_total">Total por día</string>
+    <string name="desglose_total_valor">$96.99</string>
+    <string name="proteccion">Protegido por RiderCovery. El pago se libera al Partner cuando termina el evento.</string>
+    <string name="btn_reservar">Solicitar reserva</string>
+    <string name="toast_reserva">Solicitud enviada al Partner. Te avisará si puede atenderla.</string>
+    <string name="btn_regresar">Regresar al catálogo</string>
 </resources>

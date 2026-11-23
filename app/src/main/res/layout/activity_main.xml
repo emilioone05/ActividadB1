@@ -1,63 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- ScrollView: permite desplazar el contenido si no cabe (por ejemplo al rotar la pantalla) -->
+<!-- Pantalla 1: catálogo ArtRider. ScrollView para poder desplazar si no cabe (p. ej. al rotar) -->
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true">
 
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:padding="24dp">
-
-    <TextView
-        android:id="@+id/tv_titulo"
-        android:layout_width="0dp"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/titulo_main"
-        android:textSize="26sp"
-        android:textStyle="bold"
-        android:gravity="center"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="32dp" />
+        android:orientation="vertical"
+        android:padding="20dp">
 
-    <ImageView
-        android:id="@+id/iv_imagen"
-        android:layout_width="220dp"
-        android:layout_height="220dp"
-        android:src="@drawable/imagen_demo"
-        android:contentDescription="@string/desc_imagen"
-        android:scaleType="centerCrop"
-        app:layout_constraintTop_toBottomOf="@id/tv_titulo"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="32dp" />
+        <!-- Texto: nombre y descripción de la app -->
+        <TextView
+            android:id="@+id/tv_titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/titulo_main"
+            android:textColor="@color/art_primary"
+            android:textSize="32sp"
+            android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/tv_descripcion"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="@string/descripcion_main"
-        android:textSize="16sp"
-        android:gravity="center"
-        app:layout_constraintTop_toBottomOf="@id/iv_imagen"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="24dp" />
+        <TextView
+            android:id="@+id/tv_descripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/descripcion_main"
+            android:textColor="@color/art_muted"
+            android:textSize="15sp" />
 
-    <Button
-        android:id="@+id/btn_siguiente"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="@string/btn_siguiente"
-        app:layout_constraintTop_toBottomOf="@id/tv_descripcion"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="32dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/seccion_destacado"
+            android:textColor="@color/art_dark"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <!-- Tarjeta del equipo: imagen + datos -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:cardBackgroundColor="@color/art_card"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Imagen -->
+                <ImageView
+                    android:id="@+id/iv_imagen"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:contentDescription="@string/desc_imagen"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/imagen_demo" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/tv_equipo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/equipo_nombre"
+                        android:textColor="@color/art_dark"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/equipo_categoria"
+                        android:textColor="@color/art_muted"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/equipo_precio"
+                        android:textColor="@color/art_primary"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Botón que abre la segunda ventana -->
+        <Button
+            android:id="@+id/btn_siguiente"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/btn_siguiente" />
+    </LinearLayout>
 </ScrollView>

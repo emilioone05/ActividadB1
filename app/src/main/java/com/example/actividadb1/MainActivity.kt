@@ -6,8 +6,8 @@ import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 
 /**
- * Pantalla principal (Activity 1).
- * Muestra un texto, una imagen y un botón que abre la segunda ventana.
+ * Pantalla principal (Activity 1) de la mockup de ArtRider.
+ * Muestra texto, una imagen del equipo y un botón que abre la ventana de detalle.
  */
 class MainActivity : AppCompatActivity() {
 
