@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<!-- ScrollView: permite desplazar el contenido si no cabe (por ejemplo al rotar la pantalla) -->
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fillViewport="true">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     android:padding="24dp">
 
     <TextView
@@ -54,3 +60,4 @@
         android:layout_marginTop="32dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
