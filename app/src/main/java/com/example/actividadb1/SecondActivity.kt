@@ -1,10 +1,13 @@
 package com.example.actividadb1
 
-import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 
+/**
+ * Segunda ventana (Activity 2).
+ * Muestra un mensaje y un botón "Regresar" para volver a la pantalla principal.
+ */
 class SecondActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,10 +16,9 @@ class SecondActivity : AppCompatActivity() {
 
         val btnRegresar = findViewById<Button>(R.id.btn_regresar)
 
-        // Regresa a la ventana principal
+        // finish() cierra esta Activity y Android muestra de nuevo la anterior (MainActivity),
+        // que sigue en la pila de actividades. No hace falta crear otro Intent.
         btnRegresar.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
             finish()
         }
     }
